@@ -23,7 +23,8 @@ PROJECTION = False
 BANDWIDTH_SAVER = False  # TODO
 
 DOMAIN = {
-    'posts': models.post
+    'posts': models.post,
+    'comments': models.comment
 }
 
 # DB Config

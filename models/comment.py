@@ -1,14 +1,10 @@
 # !/usr/bin/env python
 
 
-"""Package models: All models.
-
-Import this model will get all the models
-"""
+"""Module models.comment: The model of "Comment"."""
 
 
-from .post import post
-from .comment import comment
+from schemata.comment import schema
 
 
 __author__ = "WhiteTrefoil"
@@ -17,6 +13,12 @@ __version__ = "0.0.0"
 __maintainer__ = "WhiteTrefoil"
 __email__ = "whitetrefoil@gmail.com"
 __status__ = "Prototype"
+
+
+comment = {
+    'url': 'posts/<regex("[a-f0-9]{24}"):post_id>/comments',
+    'schema': schema
+}
 
 
 if __name__ == '__main__':

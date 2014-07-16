@@ -15,6 +15,13 @@ __status__ = "Prototype"
 
 
 # API Config
+ALLOWED_FILTERS = []
+SORTING = False
+PAGINATION = True
+ITEM_LOOKUP = True  # TODO
+PROJECTION = False
+BANDWIDTH_SAVER = False  # TODO
+
 DOMAIN = {
     'posts': models.post
 }
@@ -22,6 +29,9 @@ DOMAIN = {
 # DB Config
 MONGO_HOST = 'localhost'
 MONGO_DBNAME = 'rewind-bbs-eve'
+# ID_FIELD = 'id'
+# LAST_UPDATED = 'updated'
+# DATE_CREATED = 'created'
 
 # Resource Config
 RESOURCE_METHODS = ['GET', 'POST']

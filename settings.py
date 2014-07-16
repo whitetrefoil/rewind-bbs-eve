@@ -3,6 +3,8 @@
 
 """settings.py: The settings file of Eve"""
 
+import models
+
 
 __author__ = "WhiteTrefoil"
 __credits__ = ["WhiteTrefoil"]
@@ -13,10 +15,13 @@ __status__ = "Prototype"
 
 
 # API Config
-DOMAIN = {}
+DOMAIN = {
+    'posts': models.post
+}
 
 # DB Config
 MONGO_HOST = 'localhost'
+MONGO_DBNAME = 'rewind-bbs-eve'
 
 # Resource Config
 RESOURCE_METHODS = ['GET', 'POST', 'DELETE']

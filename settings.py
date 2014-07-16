@@ -24,7 +24,7 @@ MONGO_HOST = 'localhost'
 MONGO_DBNAME = 'rewind-bbs-eve'
 
 # Resource Config
-RESOURCE_METHODS = ['GET', 'POST', 'DELETE']
+RESOURCE_METHODS = ['GET', 'POST']
 ITEM_METHODS = ['GET', 'PATCH', 'PUT', 'DELETE']
 
 

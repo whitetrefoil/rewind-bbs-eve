@@ -60,3 +60,13 @@ target/
 .idea/
 *.iml
 *.ipr
+
+# General temporary files
+~*
+*.swp
+*.bak
+*.tmp
+Thumbs.db
+DS_Store/
+tmp/
+temp/

@@ -1,13 +1,10 @@
 # !/usr/bin/env python
 
 
-"""app.py: This file will declare the app instance.
-
-(in order to share it among modules)
-"""
+"""Module utils.auth.NoAuth: Fake auth, for development to use."""
 
 
-from eve import Eve
+from eve.auth import BasicAuth
 
 
 __author__ = "WhiteTrefoil"
@@ -18,7 +15,9 @@ __email__ = "whitetrefoil@gmail.com"
 __status__ = "Prototype"
 
 
-app = Eve()
+class NoAuth(BasicAuth):
+    def check_auth(self, username, password, allowed_roles, resource, method):
+        return True
 
 
 if __name__ == '__main__':

@@ -1,13 +1,12 @@
 # !/usr/bin/env python
 
 
-"""app.py: This file will declare the app instance.
-
-(in order to share it among modules)
-"""
+"""Package utils.auth: Auth"""
 
 
-from eve import Eve
+from .no_auth import NoAuth
+from .t_auth import TAuth
+from .b_auth import BAuth
 
 
 __author__ = "WhiteTrefoil"
@@ -16,9 +15,6 @@ __version__ = "0.0.0"
 __maintainer__ = "WhiteTrefoil"
 __email__ = "whitetrefoil@gmail.com"
 __status__ = "Prototype"
-
-
-app = Eve()
 
 
 if __name__ == '__main__':

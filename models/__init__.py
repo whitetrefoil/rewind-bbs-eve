@@ -9,7 +9,7 @@ Import this model will get all the models
 
 from .post import post
 from .comment import comment
-
+from .token import token
 
 __author__ = "WhiteTrefoil"
 __credits__ = ["WhiteTrefoil"]

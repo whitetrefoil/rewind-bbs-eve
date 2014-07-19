@@ -3,6 +3,7 @@
 
 """settings.py: The settings file of Eve"""
 
+
 import models
 
 
@@ -24,7 +25,8 @@ BANDWIDTH_SAVER = False  # TODO
 
 DOMAIN = {
     'posts': models.post,
-    'comments': models.comment
+    'comments': models.comment,
+    'tokens': models.token
 }
 
 # DB Config
@@ -37,6 +39,8 @@ MONGO_DBNAME = 'rewind-bbs-eve'
 # Resource Config
 RESOURCE_METHODS = ['GET', 'POST']
 ITEM_METHODS = ['GET', 'PATCH', 'PUT', 'DELETE']
+PUBLIC_METHODS = ['GET']
+PUBLIC_ITEM_METHODS = ['GET']
 
 
 if __name__ == '__main__':

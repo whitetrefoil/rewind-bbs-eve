@@ -1,13 +1,7 @@
 # !/usr/bin/env python
 
 
-"""app.py: This file will declare the app instance.
-
-(in order to share it among modules)
-"""
-
-
-from eve import Eve
+"""Module schemata.token: The schema of "Token"."""
 
 
 __author__ = "WhiteTrefoil"
@@ -18,7 +12,13 @@ __email__ = "whitetrefoil@gmail.com"
 __status__ = "Prototype"
 
 
-app = Eve()
+schema = {
+    'token': {
+        'type': 'string',
+        'unique': True,
+        'readonly': True
+    }
+}
 
 
 if __name__ == '__main__':

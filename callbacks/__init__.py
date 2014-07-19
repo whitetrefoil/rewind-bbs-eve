@@ -1,13 +1,9 @@
 # !/usr/bin/env python
 
 
-"""app.py: This file will declare the app instance.
+"""Package events: Event callbacks."""
 
-(in order to share it among modules)
-"""
-
-
-from eve import Eve
+from . import token
 
 
 __author__ = "WhiteTrefoil"
@@ -16,9 +12,6 @@ __version__ = "0.0.0"
 __maintainer__ = "WhiteTrefoil"
 __email__ = "whitetrefoil@gmail.com"
 __status__ = "Prototype"
-
-
-app = Eve()
 
 
 if __name__ == '__main__':

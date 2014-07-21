@@ -1,11 +1,13 @@
 # !/usr/bin/env python
 
 
-"""Module models.token: The model of "Token"."""
+"""Module models.account: The model of "Account".
+
+This model will be exported as "resetpassword".
+"""
 
 
-from schemata.token import schema
-from utils.auth import BAuth
+from schemata.account import schema
 
 
 __author__ = "WhiteTrefoil"
@@ -16,16 +18,15 @@ __email__ = "whitetrefoil@gmail.com"
 __status__ = "Prototype"
 
 
-token = {
-    'url': 'login',
+account = {
+    'url': 'resetpassword',
     'datasource': {
-        'source': 'tokens'
+        'source': 'accounts'
     },
     'hateoas': False,
     'resource_methods': ['POST'],
     'item_methods': [],
     'item_lookup': False,
-    'authentication': BAuth(),
     'schema': schema
 }
 

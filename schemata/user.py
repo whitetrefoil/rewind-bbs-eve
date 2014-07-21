@@ -20,7 +20,8 @@ __status__ = "Prototype"
 schema = {
     'username': {
         'type': 'string',
-        'required': True
+        'required': True,
+        'unique': True
     },
     'title': {
         'type': 'string'

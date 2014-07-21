@@ -8,6 +8,9 @@ Will be used for requesting token.
 
 
 from eve.auth import BasicAuth
+from werkzeug.security import check_password_hash
+# I don't know why `import app from app` will cause a crash...
+import app
 
 
 __author__ = "WhiteTrefoil"
@@ -20,7 +23,13 @@ __status__ = "Prototype"
 
 class BAuth(BasicAuth):
     def check_auth(self, username, password, allowed_roles, resource, method):
-        return username == 'username' and password == 'password'
+        try:
+            accounts = app.app.data.driver.db['accounts']
+            account = accounts.find_one({'username': username})
+            return check_password_hash(pwhash=account['password'],
+                                       password=password)
+        except:
+            return False
 
 
 if __name__ == '__main__':

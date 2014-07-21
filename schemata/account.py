@@ -20,7 +20,14 @@ __status__ = "Prototype"
 schema = {
     'username': {
         'type': 'string',
-        'required': True
+        'required': True,
+        'data_relation': {
+            'resource': 'users',
+            'field': 'username',
+            'embeddable': False
+        }
+        # Won't set this to unique
+        # Will implement "unique" in the API logic
     },
     'password': {
         'type': 'string',

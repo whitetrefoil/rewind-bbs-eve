@@ -26,7 +26,9 @@ BANDWIDTH_SAVER = False  # TODO
 DOMAIN = {
     'posts': models.post,
     'comments': models.comment,
-    'tokens': models.token
+    'tokens': models.token,
+    'users': models.user,
+    'accounts': models.account
 }
 
 # DB Config

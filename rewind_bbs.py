@@ -21,6 +21,8 @@ app.debug = True
 # Events
 app.on_insert_tokens += callbacks.token.generate_token
 app.on_post_POST_tokens += callbacks.token.respond_token
+app.on_insert_accounts += callbacks.account.set_password
+app.on_post_POST_accounts += callbacks.account.respond_password
 
 
 if __name__ == '__main__':

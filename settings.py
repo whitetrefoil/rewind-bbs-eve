@@ -41,8 +41,6 @@ MONGO_DBNAME = 'rewind-bbs-eve'
 # Resource Config
 RESOURCE_METHODS = ['GET', 'POST']
 ITEM_METHODS = ['GET', 'PATCH', 'PUT', 'DELETE']
-PUBLIC_METHODS = ['GET']
-PUBLIC_ITEM_METHODS = ['GET']
 
 
 if __name__ == '__main__':

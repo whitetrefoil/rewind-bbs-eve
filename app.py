@@ -8,6 +8,7 @@
 
 
 from eve import Eve
+from utils.auth.t_auth import TAuth
 
 
 __author__ = "WhiteTrefoil"
@@ -18,7 +19,7 @@ __email__ = "whitetrefoil@gmail.com"
 __status__ = "Prototype"
 
 
-app = Eve()
+app = Eve(auth=TAuth)
 
 
 if __name__ == '__main__':
